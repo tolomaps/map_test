@@ -1,0 +1,79 @@
+{
+  "bounds": [
+    -75.5066,
+    10.45,
+    -75.475,
+    10.5103
+  ],
+  "center": [
+    -75.4929,
+    10.4826,
+    14
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "puntos",
+    "template_teaser": "<strong>{{{Nombre}}}</strong><br/>\n<img src=\"{{{Foto}}}\" alt=\"{{{Desc}}}\" /><br/>\n{{{Desc}}}\n\n",
+    "template_full": "<strong>{{{Nombre}}}</strong><br/>\n<img src=\"{{{Foto}}}\" alt=\"{{{Desc}}}\" /><br/>\n{{{Desc}}}",
+    "fields": [
+      "Nombre",
+      "Foto",
+      "Desc"
+    ]
+  },
+  "minzoom": 13,
+  "maxzoom": 17,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      },
+      "extent": [
+        -179.99978348919961,
+        -85.051,
+        180,
+        83.63381093402975
+      ],
+      "class": "",
+      "srs-name": "900913",
+      "advanced": {},
+      "status": "off"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -75.503852,
+        10.451473,
+        -75.477847,
+        10.507959
+      ],
+      "id": "puntos",
+      "class": "",
+      "Datasource": {
+        "file": "https://docs.google.com/spreadsheet/pub?key=0Al9WcoSjCmvndC1sU3ZkMGJCanNyaDhQdnpGWXNTY0E&single=true&gid=1&output=csv",
+        "id": "puntos",
+        "project": "ProyectoManglares",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "puntos"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "El Desarrollo frente al Paisaje Bio Cultural - La Boquilla, Cartagena de Indias",
+  "description": "Este mapa muestra los diferentes paisajes que se desarrollan a partir de la Ciénaga de la Virgen y de Juan Polo al norte de la ciudad de Cartagena de Indias.  El paisaje cultural es definido por la presencia de comunidades afro colombianas que se asentaron a orillas de la Ciénaga. Se destaca La Boquilla, comunidad de pescadores que vive una transformación constante con el auge del turismo y los proyectos inmobiliarios, los cuales generan un paisaje urbano que dificilmente logra desarrollarse en armonía con el entorno natural, el cual paradójicamente sostiene, alimenta, y enriquece las dimensiones humanas del desarrollo. \n\nPara ver más información, <a href=\"https://docs.google.com/document/d/1hmI38Lm2G4x_fO1cHfyFY3Uxb-MqwhShWCAOFHGIejU/edit\">haga click aquí.</a>",
+  "attribution": "Fuente: <a href=\"http://www.ecoprogreso.org/\">Fundación Ecoprogreso</a>, mapa desarrollado por <a href=\"http://www.ceelat.org/mapas\">CEELAT</a>. Información mapa base de OpenStreetMap. © 2013.",
+  "legend": "<img src='data:image/png;base64, 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' />"
+}
